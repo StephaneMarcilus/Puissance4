@@ -40,7 +40,7 @@ int coup_valide(int colonne)
 int ligne_d_arret(int colonne)
 {
 	int ligne=0,i;
-	if(coup_valide(colonne)) while(grille[ligne][colonne-1]==' ' && i<6){i++; ligne++;}; //for(i=0;i<6;i++) if(grille[ligne][colonne-1]==' ') ligne++; 
+	if(coup_valide(colonne)) for(i=0;i<6;i++) if(grille[ligne][colonne-1]==' ') ligne++; //while(grille[ligne][colonne-1]==' ' && i<6){i++; ligne++;};  
 	return ligne;
 }
 
@@ -138,6 +138,6 @@ void partie()
 int main()
 {
 	system("cls");
-    partie();
+	partie();
     return 0;
 }
