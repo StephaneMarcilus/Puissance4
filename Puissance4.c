@@ -132,7 +132,7 @@ void partie()
 		while(!(grille_pleine() || verification_4_jetons()));
 		if(verification_4_jetons() && cpt%2) printf("\n\n Victoire du joueur 1 ! (O)\n\n  Fin de la partie.");
 		if(verification_4_jetons() && !(cpt%2)) printf("\n\n Victoire du joueur 2 ! (X)\n\n  Fin de la partie.");
-		if(grille_pleine() && !(verification_4_jetons())) printf("\n\n Match nul, aucun gagnant.\n\n  Fin de la partie.");
+		if(grille_pleine() && !(verification_4_jetons())) printf("\n\n Match nul, aucun gagnant !\n\n  Fin de la partie.");
 }
 
 int main()
